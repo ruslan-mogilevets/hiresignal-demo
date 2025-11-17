@@ -9,11 +9,18 @@ st.set_page_config(
     layout="centered"
 )
 
-# Main Title with fire icon
-st.title("🔥 HireSignal AI")
-
-# Subheader
-st.subheader("EEOC Dockets → 60-Second Openers")
+# Centered Title + Subheader (HTML)
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <h1 style="font-size: 48px; margin-bottom: 0; color: #0A1D56;">🔥 HireSignal AI</h1>
+        <h3 style="font-size: 28px; color: #39FF14; margin-top: 10px; font-weight: 500;">
+            EEOC Dockets → 60-Second Openers
+        </h3>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Caption
 st.caption("Upload a CSV (LinkedIn or CRM export) to instantly get risk-triggered email openers.")
@@ -111,4 +118,4 @@ else:
 
 # Footer
 st.markdown("---")
-st.caption("Built in **4.1 hours** with **Claude + Cursor + Streamlit Cloud** | Ruslan M. for Mudita Studios")
+st.caption("Built in **4.1 hours** with **Grok + Github + Streamlit Cloud** | Ruslan M. for Mudita Studios")
