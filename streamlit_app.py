@@ -14,7 +14,7 @@ st.markdown(
     """
     <div style="text-align: center;">
         <h1 style="font-size: 48px; margin-bottom: 0; color: #0A1D56;">🔥 HireSignal AI</h1>
-        <h3 style="font-size: 28px; color: #39FF14; margin-top: 10px; font-weight: 500;">
+        <h3 style="font-size: 28px; color: #0A1D56; margin-top: 10px; font-weight: 500;">
             EEOC Dockets → 60-Second Openers
         </h3>
     </div>
