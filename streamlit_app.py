@@ -118,4 +118,4 @@ else:
 
 # Footer
 st.markdown("---")
-st.caption("Built in **4.1 hours** with **Grok + Github + Streamlit Cloud** | Ruslan M. for Mudita Studios")
+st.caption("Built in **4.1 hours** with **Grok AI + GitHub + Streamlit Cloud** by Ruslan M. for Mudita Studios")
