@@ -108,4 +108,4 @@ else:
 
 # Footer
 st.markdown("---")
-st.caption("Built in **4.1 hours** with **Claude + Cursor + Streamlit Cloud** | @agenture_ai")
+st.caption("Built in **4 hours** with **Grok + Streamlit Cloud + Github repo** | Ruslan M. for Mudita Studios ")
