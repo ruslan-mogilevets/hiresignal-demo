@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # Title
-st.title("🔥 HireSignal – EEOC to Opener in 60s")
+st.title("🔥 HireSignal: EEOC Dockets → 60-Second Openers")
 
 # Instructions
 st.caption("Upload a CSV (LinkedIn or CRM export) to instantly get risk-triggered email openers.")
