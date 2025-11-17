@@ -4,15 +4,18 @@ import pandas as pd
 
 # Page config
 st.set_page_config(
-    page_title="HireSignal",
+    page_title="HireSignal AI",
     page_icon="🔥",
     layout="centered"
 )
 
-# Title
-st.title("🔥 HireSignal: EEOC Dockets → 60-Second Openers")
+# Main Title
+st.title("HireSignal AI")
 
-# Instructions
+# Subheader
+st.subheader("EEOC Dockets → 60-Second Openers")
+
+# Caption
 st.caption("Upload a CSV (LinkedIn or CRM export) to instantly get risk-triggered email openers.")
 
 # File uploader
@@ -53,9 +56,9 @@ if uploaded_file is not None:
         df = df.sort_values("RVI", ascending=False).reset_index(drop=True)
 
         # Show results
-        st.success(f"✅ Processed {len(df)} leads. Found **3 high-risk signals**.")
+        st.success(f"Processed {len(df)} leads. Found **3 high-risk signals**.")
 
-        st.write("### 🏆 Top 3 Risk Leads")
+        st.write("### Top 3 Risk Leads")
 
         for i in range(min(3, len(df))):
             row = df.iloc[i]
@@ -83,7 +86,7 @@ if uploaded_file is not None:
         # Export
         csv = df.to_csv(index=False).encode('utf-8')
         st.download_button(
-            label="📥 Export Ranked CSV",
+            label="Export Ranked CSV",
             data=csv,
             file_name="hiresignal-ranked-leads.csv",
             mime="text/csv"
@@ -94,7 +97,7 @@ if uploaded_file is not None:
         st.info("Make sure your file is a valid CSV and try again.")
 
 else:
-    st.info("👆 Upload a CSV to get started.")
+    st.info("Upload a CSV to get started.")
     st.markdown(
         """
         **Example CSV format**:
@@ -108,4 +111,4 @@ else:
 
 # Footer
 st.markdown("---")
-st.caption("Built in **4 hours** with **Grok + Streamlit Cloud + Github repo** | Ruslan M. for Mudita Studios ")
+st.caption("Built in **4.1 hours** with **Claude + Cursor + Streamlit Cloud** | @agenture_ai")
